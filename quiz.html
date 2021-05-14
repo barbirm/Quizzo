@@ -18,8 +18,8 @@
     <div class="container">
         <div id="game">
             <div id="hud">
-                <div class="hud-item first-fade">
-                    <p id="progressText" class="hud-prefix">
+                <div class="hud-item">
+                    <p id="progresstext" class="hud-prefix">
                         Question
                     </p>
                 </div>
@@ -32,27 +32,30 @@
                     </h1>
                 </div>
             </div>
-            <div class="second-fade">
+            <div id="question-position" class="first-fade">
             <h2 id="question" class="col-12 row d-flex justify-content-center mx-auto">Question?</h1>
-            <div class="answer-container btn col-12 row d-flex justify-content-center mx-auto">
+            <div class="answer-container btn mx-auto">
                 <p class="answer-prefix">A</p>
                 <p class="answer" data-number="1">Answer</p>
             </div>
-            <div class="answer-container btn col-12 row d-flex justify-content-center mx-auto">
+            <div class="answer-container btn mx-auto">
                 <p class="answer-prefix">B</p>
                 <p class="answer" data-number="2">Answer</p>
             </div>
-            <div class="answer-container btn col-12 row d-flex justify-content-center mx-auto">
+            <div class="answer-container btn mx-auto">
                 <p class="answer-prefix">C</p>
                 <p class="answer" data-number="3">Answer</p>
             </div>
-            <div class="answer-container btn col-12 row d-flex justify-content-center mx-auto">
+            <div class="answer-container btn mx-auto">
                 <p class="answer-prefix">D</p>
                 <p class="answer" data-number="4">Answer</p>
             </div>
         </div>
     </div>
     </div>
-    <script type = "text/javascript" src="assets/js/script.js"></script>
+    <div class="col-12 row d-flex justify-content-center mx-auto first-fade">
+        <a href="index.html" class="btn home-btn">Main Menu&nbsp;<i class="fas fa-home"></i></a>
+    </div>
+    <script type = "text/javascript" src="assets/js/quiz.js"></script>
 </body>
 </html>
