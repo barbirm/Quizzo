@@ -43,7 +43,59 @@ h3 {
     color: khaki;
 }
 
-/*-------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Quiz Page -------------------------------------------------------------------------------------------------------------------------*/
+
+/* Score area*/
+#hud {
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.hud-prefix {
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+/*Question area*/
+
+#question {
+    margin: 2rem 0;
+}
+
+.answer-container:hover {
+    cursor: pointer;
+    transform: scale(1);
+    transform: transform 100ms;
+}
+
+.answer-prefix {
+    padding: 0.5rem 1rem;
+    
+}
+
+.answer {
+    padding: 0.5rem 1rem;
+}
+
+.correct {
+    background: greenyellow
+}
+
+.incorrect {
+    background: red
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Found the code for this self-invoking CSS animation here: https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
 

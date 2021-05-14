@@ -16,15 +16,12 @@
 </head>
 <body>
     <div class="container">
-        <div id="game" class="">
+        <div id="game" class="justify-center flex-column">
             <div id="hud">
-                <div class="hud-item mx-auto">
+                <div class="hud-item">
                     <p id="progressText" class="hud-prefix">
                         Question
                     </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>
                 </div>
                 <div class="hud-item">
                     <p class="hud-prefix">
@@ -35,7 +32,7 @@
                     </h1>
                 </div>
             </div>
-            <h1 id="question">Question?</h1>
+            <h2 id="question" class="col-12 row d-flex justify-content-center mx-auto">Question?</h1>
             <div class="answer-container btn col-12 row d-flex justify-content-center mx-auto">
                 <p class="answer-prefix">A</p>
                 <p class="answer" data-number="1">Answer</p>
