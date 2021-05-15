@@ -57,17 +57,17 @@ h3 {
 }
 
 .hud-prefix {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .hud-main-text {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 /*Question area*/
 
-#question-position {
-    margin: 1rem 0 5rem 0;
+#quiz-position {
+    margin: 1rem 0 2rem 0;
 }
 
 #question {
@@ -107,21 +107,36 @@ h3 {
 }
 
 .correct {
-    background:  #adff2f
+    background: #adff2f
 }
 
 .incorrect {
     background: #FF0000;
 }
 
+.home-btn {
+    background-color: #2b2d2f;;
+    border: 2px solid #F0E68C;
+    color: #F0E68C;
+    width: 20rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
 
+.home-btn:hover {
+    cursor: pointer;
+    background-color: #F0E68C;
+    color: #2b2d2f;
+    transition: ease-in 160ms;
+    
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Instructions Page -----------------------------------------------------------------------------------------------------------------*/
 
 #mar-top {
-    margin-top: 30px;
+    margin: 3rem 20rem 3rem;
 }
 
 #instructions {
@@ -131,7 +146,15 @@ h3 {
 
 #inst-p {
     font-size: 25px;
-    margin-top: 1rem;
+    margin: 1rem 6rem 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*End Page -------------------------------------------------------------------------------------------------------------------------*/
+
+#final-score {
+    font-size: 50px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -214,23 +237,43 @@ h3 {
     to   { opacity: 1; }
 }
 
-.home-btn {
-    background-color: #2b2d2f;;
-    border: 2px solid #F0E68C;
-    color: #F0E68C;
-    width: 20rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-}
+/*Media Queries*/
 
-.home-btn:hover {
-    cursor: pointer;
-    background-color: #F0E68C;
-    color: #2b2d2f;
-    transition: ease-in 160ms;
+@media (max-width: 480px) {
+
+    .answer-container {
+        font-size: 1.3rem;
+    }
+
+    #inst-p {
+        font-size: 20px;
+    }
     
-}
+    #mar-top {
+        margin: 2rem 1rem 2rem;
+    }
+    
+    }
 
-#final-score {
-    font-size: 50px;
-}
+    @media (min-width: 480px) and  (max-width: 767px) {
+
+        #inst-p {
+            font-size: 20px;
+        }
+        
+        #mar-top {
+            margin: 2rem 1rem 2rem;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 979px) {
+        #inst-p {
+            font-size: 25px;
+        }
+        
+        #mar-top {
+            margin: 2rem 1rem 2rem;
+        }
+        
+    }
+    
