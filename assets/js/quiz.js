@@ -1,8 +1,8 @@
 //Define variables
-const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('answer'));
-const progressText = document.getElementById('progresstext');
-const scoreText = document.getElementById('score');
+const question = document.getElementById("question");
+const choices = Array.from(document.getElementsByClassName("answer"));
+const progressText = document.getElementById("progresstext");
+const scoreText = document.getElementById("score");
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -54,8 +54,8 @@ startGame = () => {
 //Function for moving through the quiz
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestions) {
-        localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('end.html');
+        localStorage.setItem("mostRecentScore", score);
+        return window.location.assign("end.html");
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${maxQuestions}`;
@@ -67,8 +67,8 @@ getNewQuestion = () => {
 
     //Function which defines what happens when incorrect VS. correct answer is clicked ("click" event)
     choices.forEach((choice) => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+        const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["choice" + number];
     });
 
     availableQuesions.splice(questionIndex, 1);
@@ -76,17 +76,17 @@ getNewQuestion = () => {
 };
 
 choices.forEach((choice) => {
-    choice.addEventListener('click', (e) => {
+    choice.addEventListener("click", (e) => {
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset["number"];
 
         const classToApply =
-            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+            selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
-        if (classToApply === 'correct') {
+        if (classToApply === "correct") {
             incrementScore(correctBonus);
         }
 
