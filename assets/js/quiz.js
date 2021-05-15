@@ -12,17 +12,32 @@ let availableQuesions = [];
 let questions = [];
 
 //Load questions from JSON file
-fetch('questions.json')
+fetch("https://opentdb.com/api.php?amount=50&type=multiple")
     .then((res) => {
         return res.json();
     })
     .then((loadedQuestions) => {
-        questions = loadedQuestions;
+        questions = loadedQuestions.results.map((loadedQuestion) => {
+            const formattedQuestion = {
+                question: loadedQuestion.question,
+            };
+
+            const answerChoices = [...loadedQuestion.incorrect_answers];
+            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+            answerChoices.splice(
+                formattedQuestion.answer - 1,
+                0,
+                loadedQuestion.correct_answer
+            );
+
+            answerChoices.forEach((choice, index) => {
+                formattedQuestion['choice' + (index + 1)] = choice;
+            });
+
+            return formattedQuestion;
+        });
         startGame();
     })
-    .catch((err) => {
-        console.error(err);
-    });
 
 //Set bonus increment constant and max. number of questions displayed
 const correctBonus = 100;
@@ -40,8 +55,7 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('mostRecentScore', score);
-        //Link to the end page
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${maxQuestions}`;
