@@ -38,7 +38,6 @@ h3 {
 .btn-home:hover {
     cursor: pointer;
     background: #2b2d2f;
-    color: #ffff00;
     transition: ease-in 160ms;
     color: #F0E68C;
 }
@@ -93,15 +92,8 @@ h3 {
     
 }
 
-.answer-container:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transform: transform 200ms;
-}
-
 .answer {
     padding: 1rem;
-    text-justify: left;
     display: flex;
     width: 100%;
 }
@@ -141,7 +133,6 @@ h3 {
 
 #instructions {
     text-decoration: underline;
-    text-underline-offset: 0.3rem;
 }
 
 #inst-p {
@@ -151,10 +142,14 @@ h3 {
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 
-/*End Page -------------------------------------------------------------------------------------------------------------------------*/
+/*End Page --------------------------------------------------------------------------------------------------------------------------*/
 
 #final-score {
     font-size: 50px;
+}
+
+#headliner-end {
+    margin-top: 30px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
