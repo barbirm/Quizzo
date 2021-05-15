@@ -25,8 +25,8 @@ fetch('questions.json')
     });
 
 //Set bonus increment constant and max. number of questions displayed
-const correctBonus = 10;
-const maxQuestions = 5;
+const correctBonus = 100;
+const maxQuestions = 10;
 
 //Function to start the quiz
 startGame = () => {

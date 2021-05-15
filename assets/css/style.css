@@ -6,7 +6,7 @@ html, body {
     font-family: 'Source Code Pro', monospace;
     box-sizing: border-box;
     background-color: #2b2d2f;
-    color: khaki;
+    color: #F0E68C;
 }
 
 /*Home Page -------------------------------------------------------------------------------------------------------------------------*/
@@ -30,7 +30,7 @@ h3 {
 
 .btn-home {
     font-size: 1.5rem;
-    background: yellow;
+    background: #ffff00;
     width: 20rem;
     margin: 1rem;
 }
@@ -38,9 +38,9 @@ h3 {
 .btn-home:hover {
     cursor: pointer;
     background: #2b2d2f;
-    color: yellow;
+    color: #ffff00;
     transition: ease-in 160ms;
-    color: khaki;
+    color: #F0E68C;
 }
 
 
@@ -53,7 +53,7 @@ h3 {
 #hud {
     display: flex;
     justify-content: space-between;
-    color: whitesmoke;
+    color: #F5F5F5;
 }
 
 .hud-prefix {
@@ -88,7 +88,7 @@ h3 {
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    background: yellow;
+    background: #ffff00;
     margin: 1rem;
     
 }
@@ -96,7 +96,7 @@ h3 {
 .answer-container:hover {
     cursor: pointer;
     transform: scale(1.1);
-    transform: transform 300ms;
+    transform: transform 200ms;
 }
 
 .answer {
@@ -107,11 +107,11 @@ h3 {
 }
 
 .correct {
-    background: greenyellow;
+    background:  #adff2f
 }
 
 .incorrect {
-    background: red;
+    background: #FF0000;
 }
 
 
@@ -130,7 +130,7 @@ h3 {
 }
 
 #inst-p {
-    font-size: 27px;
+    font-size: 25px;
     margin-top: 1rem;
 }
 
@@ -216,8 +216,8 @@ h3 {
 
 .home-btn {
     background-color: #2b2d2f;;
-    border: 2px solid khaki;
-    color: khaki;
+    border: 2px solid #F0E68C;
+    color: #F0E68C;
     width: 20rem;
     margin: 1rem;
     font-size: 1.5rem;
@@ -225,8 +225,12 @@ h3 {
 
 .home-btn:hover {
     cursor: pointer;
-    background-color: khaki;
+    background-color: #F0E68C;
     color: #2b2d2f;
     transition: ease-in 160ms;
     
+}
+
+#final-score {
+    font-size: 50px;
 }
