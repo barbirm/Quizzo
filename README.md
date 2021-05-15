@@ -1,8 +1,8 @@
-[Link to the quiz](https://barbirm.github.io/qeasy/index.html)
-
 # Qeasy - Quick & Easy General knowledge quiz
 
 ![amiresponsive](https://user-images.githubusercontent.com/73644304/118357631-1306a080-b573-11eb-8475-e939486eb54a.png)
+
+[Link to the quiz](https://barbirm.github.io/qeasy/index.html)
 
 This is web application for quick test of your general knowledge. Simple styled, with multiple choice answers, to make waiting for the bus shorter. Main features are:
 - Interactivness
@@ -24,8 +24,6 @@ Size of the answer buttons depends on the amount of text it holds which results 
 
 ## Design
 
-add photo here
-
 Colour Scheme
 - #2b2d2f (chrysler charcoal grey)
 - #f0e68c (khaki)
@@ -46,37 +44,37 @@ Wireframes
 
 #### Home page (Main Menu)
 
-Components:
+- Components:
     - Title, logo, descripition 
     - Start button
     - Instructions button
 
-Features:
+- Features:
     - Can start the quiz by clicking 'Start button'
     - Can start instructions by clicking 'Instructions' button
 
 
 #### Instructions
 
-Components:
+- Components:
     - Short instructions
     - Start button
     - Main Menu button
     
-Features:
+- Features:
     - Can start the quiz by clicking 'Start button'
     - Can go back to the Main Menu by clicking 'Main Menu' button
 
 #### Quiz
 
-Components:
+- Components:
     - Progress text
     - Score counter
     - Question
     - Four option answers
     - Main Menu button
 
-Features:
+- Features:
     - When starting the quiz by clicking any 'Start' button, first (random) question will be displayed, as well as the four possible answers. API used contains 50 different questions, from different categories, of different difficulty - more than enough while that bus is here.
     - When clicking the selected answer, button colours green if correct or red if incorrect. After quick pause, new question is diplayed.
     - One round of the quiz will have 10 questions displayed.
@@ -85,12 +83,12 @@ Features:
 
 #### Final result
 
-Components:
+- Components:
     - Total score display
     - Play again button
     - Main Menu button
 
-Features:
+- Features:
     - Total score is displayed when landed on the page.
     - When 'Play again' button is clicked, new round of the quiz starts.
     - When 'Main Menu' button is clicked, Main Menu is displayed.
